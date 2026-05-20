@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Cathome</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Cat Roses</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🐈 Cathome 🌹</h1>
-
 <canvas id="gameCanvas" width="900" height="500"></canvas>
 
-<script src="script.js"></script>
+<div id="endScreen" class="hidden">
+  <h1>❤️ Mission accomplie ❤️</h1>
+  <p>Le chat roux offre ses roses au chat gris</p>
 
+  <div class="ending-scene">
+    <img src="assets/cat-orange.png" class="pixel-cat">
+    <img src="assets/rose.png" class="rose-end">
+    <img src="assets/cat-gray.png" class="pixel-cat">
+  </div>
+
+  <button onclick="location.reload()">Rejouer</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
